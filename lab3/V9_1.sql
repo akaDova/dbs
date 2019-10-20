@@ -53,9 +53,9 @@ WHERE RankNum > 1
 ALTER TABLE dbo.StateProvince
 	DROP COLUMN AddressType
 ALTER TABLE dbo.StateProvince
-	DROP CONSTRAINT PK_StateProvince
-ALTER TABLE dbo.StateProvince
-	DROP CONSTRAINT CK_TerritoryID
+	DROP CONSTRAINT 
+		PK_StateProvince,
+		CK_TerritoryID
 -- task f
 DROP TABLE dbo.StateProvince
 
