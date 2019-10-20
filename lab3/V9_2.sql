@@ -6,8 +6,6 @@ ALTER TABLE dbo.StateProvince
 		AverageRate MONEY,
 		IntTaxRate AS CEILING(TaxRate)
 -- task b
-DROP TABLE #StateProvince 
-
 CREATE TABLE #StateProvince ( 
 	StateProvinceID INT NOT NULL PRIMARY KEY CLUSTERED,
 	StateProvinceCode NCHAR(3) NOT NULL,
