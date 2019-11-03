@@ -7,7 +7,7 @@ ALTER TABLE dbo.StateProvince
 		IntTaxRate AS CEILING(TaxRate)
 -- task b
 CREATE TABLE #StateProvince ( 
-	StateProvinceID INT NOT NULL PRIMARY KEY CLUSTERED,
+	StateProvinceID INT NOT NULL PRIMARY KEY,
 	StateProvinceCode NCHAR(3) NOT NULL,
 	CountryRegionCode NVARCHAR(3) NOT NULL,
 	IsOnlyStateProvinceFlag SMALLINT,
